@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<conio.h>
+void printDigits(int num)
+{
+ int digit;
+ clrscr();
+ num = abs(num);
+ while (num > 0)
+{
+ digit = num % 10;
+ printf("%d ", digit);
+ num = num / 10;
+ }
+}
+int main()
+{
+ int number;
+ printf("Enter an integer number: ");
+ scanf("%d", &number);
+ printf("Printing digits of the number: ");
+ printDigits(number);
+ getch();
+ return 0;
+}

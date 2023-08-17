@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ int i,n;
+ clrscr();
+ printf("Enter the value of n:");
+ scanf("%d",&n);
+ printf("number of series:");
+ for(i=1;i<=n;i++);
+ {
+  printf("%d",i);
+ }
+ getch();
+ return 0;
+}
